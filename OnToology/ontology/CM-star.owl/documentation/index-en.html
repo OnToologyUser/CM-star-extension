@@ -6,11 +6,11 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/def/conceptual-mapping-star","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/def/conceptual-mapping-star","name":"Conceptual Mapping - RDF-star", "headline":"This ontology extends the Conceptual Mapping to enable the generation of RDF-star graphs", "datePublished":"2022-02-08T00:00:00", "version":"v0.1.0", "license":"http://purl.org/NET/rdflicense/cc-by-sa4.0", "author":[{"@type":"Person","name":"Ana Iglesias Molina (Ontology ENgineering Group)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/def/conceptual-mapping-star","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/def/conceptual-mapping-star","name":"Conceptual Mapping - RDF-star", "headline":"This ontology extends the Conceptual Mapping to enable the generation of RDF-star graphs", "datePublished":"2022-02-08", "version":"v0.1.0", "license":"http://purl.org/NET/rdflicense/cc-by-sa4.0", "author":[{"@type":"Person","name":"Ana Iglesias Molina (Ontology Engineering Group)"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,27 +40,27 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+      $("#abstract").load("sections/abstract-en.html");
+      $("#introduction").load("sections/introduction-en.html");
+      $("#overview").load("sections/overview-en.html");
+      $("#description").load("sections/description-en.html");
+      $("#references").load("sections/references-en.html");
+      $("#crossref").load("sections/crossref-en.html", null, loadHash);
     });
-    </script> 
-  </head> 
+    </script>
+  </head>
 
 <body>
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>Conceptual Mapping - RDF-star</h1>
-<h2>Release 2022-02-08T00:00:00</h2>
+<h2>Release 2022-02-08</h2>
 
 
 <dl>
@@ -69,7 +69,7 @@ function loadTOC(){
 <dt>Revision:</dt>
 <dd>v0.1.0</dd>
 <dt>Authors:</dt>
-<dd>Ana Iglesias Molina (Ontology ENgineering Group)</dd>
+<dd>Ana Iglesias Molina (Ontology Engineering Group)</dd>
 
 <dt>Publisher:</dt>
 <dd><a href="https://oeg.fi.upm.es/">https://oeg.fi.upm.es/</a></dd>
@@ -78,7 +78,7 @@ function loadTOC(){
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://purl.org/NET/rdflicense/cc-by-sa4.0" target="_blank"><img src="https://img.shields.io/badge/License-http://purl.org/NET/rdflicense/cc_by_sa4.0-blue.svg" alt="http://purl.org/NET/rdflicense/cc-by-sa4.0" /></a>
 </dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Ana Iglesias Molina (Ontology ENgineering Group). Conceptual Mapping - RDF-star. Revision: v0.1.0. Retrieved from: http://vocab.linkeddata.es/def/conceptual-mapping-star</dd>
+<dd>Ana Iglesias Molina (Ontology Engineering Group). Conceptual Mapping - RDF-star. Revision: v0.1.0. Retrieved from: http://vocab.linkeddata.es/def/conceptual-mapping-star</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
