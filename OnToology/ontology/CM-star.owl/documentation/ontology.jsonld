@@ -1,0 +1,101 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Conceptual Mapping - RDF-star"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-02-08T00:00:00"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ana Iglesias Molina (Ontology ENgineering Group)"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This ontology extends the Conceptual Mapping to enable the generation of RDF-star graphs"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by-sa4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "cm-star"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.1.0"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Non-Asserted Statement Map"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A quoted Statement Map that is not asserted in the RDF-star graph"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has quoted object"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A relation between a Statement Map and the quoted Statement Map in the position of object"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has quoted subject"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A relation between a Statement Map and the quoted Statement Map in the position of subject"
+  } ]
+} ]
