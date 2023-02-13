@@ -17,7 +17,7 @@ The following diagram shows a general overview of the classes and properties of 
 </p>
 
 ### Ontology (OWL)
-The encoded ontology in OWL can be found [here](https://oeg-upm.github.io/Conceptual-Mapping/requirements/requirements-star.html). 
+The encoded ontology in OWL can be found [here](https://github.com/anaigmo/CM-star-extension/blob/main/ontology/CM-star.owl). 
 
 ## Maintenance
 The management of issues and improvements suggested for this vocabulary is done by addressing [issues](https://github.com/oeg-upm/Conceptual-Mapping/issues) in the repository.
