@@ -7,13 +7,16 @@
       "@id" : "http://purl.org/dc/terms/created"
     },
     "StatementMap" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
+      "@id" : "https://w3id.org/conceptual-mapping#StatementMap"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },
     "NonAssertedStatementMap" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap"
+      "@id" : "https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+    },
+    "AssertedStatementMap" : {
+      "@id" : "https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
@@ -22,7 +25,7 @@
       "@id" : "http://purl.org/dc/terms/creator"
     },
     "hasQuotedSubject" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject",
+      "@id" : "https://w3id.org/conceptual-mapping/star#hasQuotedSubject",
       "@type" : "@id"
     },
     "preferredNamespacePrefix" : {
@@ -38,7 +41,7 @@
       "@id" : "http://purl.org/dc/elements/1.1/publisher"
     },
     "hasQuotedObject" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject",
+      "@id" : "https://w3id.org/conceptual-mapping/star#hasQuotedObject",
       "@type" : "@id"
     },
     "description" : {
