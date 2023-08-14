@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/def/conceptual-mapping-star#"
-     xml:base="http://vocab.linkeddata.es/def/conceptual-mapping-star"
+<rdf:RDF xmlns="https://w3id.org/conceptual-mapping/star#"
+     xml:base="https://w3id.org/conceptual-mapping/star"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,9 +11,9 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-star#">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-star"/>
-        <owl:imports rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
+    <owl:Ontology rdf:about="https://w3id.org/conceptual-mapping/star#">
+        <owl:versionIRI rdf:resource="https://w3id.org/conceptual-mapping/star"/>
+        <owl:imports rdf:resource="https://w3id.org/conceptual-mapping"/>
         <dc:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <dc:title>Conceptual Mapping - RDF-star</dc:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-08T00:00:00</terms:created>
@@ -21,13 +21,13 @@
         <terms:description>This ontology extends the Conceptual Mapping to enable the generation of RDF-star graphs</terms:description>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-sa4.0"/>
         <vann:preferredNamespacePrefix>cm-star</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-star"/>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/conceptual-mapping/star"/>
         <owl:versionInfo>v0.1.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -35,28 +35,28 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject">
+    <!-- https://w3id.org/conceptual-mapping/star#hasQuotedObject -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping/star#hasQuotedObject">
         <rdfs:label>has quoted object</rdfs:label>
         <skos:definition>A relation between a Statement Map and the quoted Statement Map in the position of object</skos:definition>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject">
+    <!-- https://w3id.org/conceptual-mapping/star#hasQuotedSubject -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping/star#hasQuotedSubject">
         <rdfs:label>has quoted subject</rdfs:label>
         <skos:definition>A relation between a Statement Map and the quoted Statement Map in the position of subject</skos:definition>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -64,34 +64,34 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap -->
 
-    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap">
+    <!-- https://w3id.org/conceptual-mapping#StatementMap -->
+
+    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping#StatementMap">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject"/>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping/star#hasQuotedObject"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject"/>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping/star#hasQuotedSubject"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
-    
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+    <!-- https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap -->
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
         <rdfs:label>Non-Asserted Statement Map</rdfs:label>
         <skos:definition>A quoted Statement Map that is not asserted in the RDF-star graph</skos:definition>
     </owl:Class>
@@ -100,4 +100,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
