@@ -17,17 +17,82 @@
         <dc:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <dc:title>Conceptual Mapping - RDF-star</dc:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-08T00:00:00</terms:created>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ana Iglesias Molina (Ontology ENgineering Group)</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ana Iglesias Molina (Ontology Engineering Group)</terms:creator>
         <terms:description>This ontology extends the Conceptual Mapping to enable the generation of RDF-star graphs</terms:description>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-sa4.0"/>
         <vann:preferredNamespacePrefix>cm-star</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/conceptual-mapping/star"/>
         <owl:versionInfo>v0.1.0</owl:versionInfo>
     </owl:Ontology>
+    
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <!--
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -35,28 +100,46 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/conceptual-mapping/star#hasQuotedObject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping/star#hasQuotedObject">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping/star#AssertedStatementMap"/>
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:label>has quoted object</rdfs:label>
         <skos:definition>A relation between a Statement Map and the quoted Statement Map in the position of object</skos:definition>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/conceptual-mapping/star#hasQuotedSubject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping/star#hasQuotedSubject">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping/star#AssertedStatementMap"/>
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:label>has quoted subject</rdfs:label>
         <skos:definition>A relation between a Statement Map and the quoted Statement Map in the position of subject</skos:definition>
     </owl:ObjectProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -64,28 +147,53 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/conceptual-mapping#StatementMap -->
 
-    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping#StatementMap">
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#StatementMap">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping/star#hasQuotedObject"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/conceptual-mapping/star#AssertedStatementMap"/>
+                            <rdf:Description rdf:about="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping/star#hasQuotedSubject"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/conceptual-mapping/star#AssertedStatementMap"/>
+                            <rdf:Description rdf:about="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
 
+
+    <!-- https://w3id.org/conceptual-mapping/star#AssertedStatementMap -->
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping/star#AssertedStatementMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"/>
+        <rdfs:label>Asserted Statement Map</rdfs:label>
+        <skos:definition>A quoted Statement Map that is asserted in the RDF-star graph</skos:definition>
+    </owl:Class>
+    
 
 
     <!-- https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap -->
@@ -100,3 +208,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
