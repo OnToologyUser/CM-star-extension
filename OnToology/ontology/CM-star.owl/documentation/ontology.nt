@@ -1,15 +1,51 @@
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/def/conceptual-mapping-star> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://www.w3.org/2002/07/owl#imports> <http://vocab.linkeddata.es/def/conceptual-mapping> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://purl.org/dc/elements/1.1/publisher> <https://oeg.fi.upm.es/> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping - RDF-star" .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://purl.org/dc/terms/created> "2022-02-08T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology ENgineering Group)" .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://purl.org/dc/terms/description> "This ontology extends the Conceptual Mapping to enable the generation of RDF-star graphs" .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-sa4.0> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm-star" .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping-star> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0" .
+<https://w3id.org/conceptual-mapping/star#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/conceptual-mapping/star#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/conceptual-mapping/star> .
+<https://w3id.org/conceptual-mapping/star#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/conceptual-mapping> .
+<https://w3id.org/conceptual-mapping/star#> <http://purl.org/dc/elements/1.1/publisher> <https://oeg.fi.upm.es/> .
+<https://w3id.org/conceptual-mapping/star#> <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping - RDF-star" .
+<https://w3id.org/conceptual-mapping/star#> <http://purl.org/dc/terms/created> "2022-02-08T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/conceptual-mapping/star#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)" .
+<https://w3id.org/conceptual-mapping/star#> <http://purl.org/dc/terms/description> "This ontology extends the Conceptual Mapping to enable the generation of RDF-star graphs" .
+<https://w3id.org/conceptual-mapping/star#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-sa4.0> .
+<https://w3id.org/conceptual-mapping/star#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm-star" .
+<https://w3id.org/conceptual-mapping/star#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/conceptual-mapping/star> .
+<https://w3id.org/conceptual-mapping/star#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -19,15 +55,35 @@
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject> <http://www.w3.org/2000/01/rdf-schema#label> "has quoted object" .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a Statement Map and the quoted Statement Map in the position of object" .
+# https://w3id.org/conceptual-mapping/star#hasQuotedObject
+<https://w3id.org/conceptual-mapping/star#hasQuotedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping/star#hasQuotedObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping/star#hasQuotedObject> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping/star#AssertedStatementMap> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/conceptual-mapping/star#hasQuotedObject> <http://www.w3.org/2000/01/rdf-schema#label> "has quoted object" .
+<https://w3id.org/conceptual-mapping/star#hasQuotedObject> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a Statement Map and the quoted Statement Map in the position of object" .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject> <http://www.w3.org/2000/01/rdf-schema#label> "has quoted subject" .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a Statement Map and the quoted Statement Map in the position of subject" .
+# https://w3id.org/conceptual-mapping/star#hasQuotedSubject
+<https://w3id.org/conceptual-mapping/star#hasQuotedSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping/star#hasQuotedSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping/star#hasQuotedSubject> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping/star#AssertedStatementMap> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/conceptual-mapping/star#hasQuotedSubject> <http://www.w3.org/2000/01/rdf-schema#label> "has quoted subject" .
+<https://w3id.org/conceptual-mapping/star#hasQuotedSubject> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a Statement Map and the quoted Statement Map in the position of subject" .
 # 
 # 
 # 
@@ -38,22 +94,46 @@
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap
-<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
-_:genid1 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
-_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# https://w3id.org/conceptual-mapping#StatementMap
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping/star#AssertedStatementMap> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping/star#hasQuotedObject> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping/star#AssertedStatementMap> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping/star#hasQuotedSubject> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Asserted Statement Map" .
-<http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap> <http://www.w3.org/2004/02/skos/core#definition> "A quoted Statement Map that is not asserted in the RDF-star graph" .
+# https://w3id.org/conceptual-mapping/star#AssertedStatementMap
+<https://w3id.org/conceptual-mapping/star#AssertedStatementMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping/star#AssertedStatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping/star#AssertedStatementMap> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> .
+<https://w3id.org/conceptual-mapping/star#AssertedStatementMap> <http://www.w3.org/2000/01/rdf-schema#label> "Asserted Statement Map" .
+<https://w3id.org/conceptual-mapping/star#AssertedStatementMap> <http://www.w3.org/2004/02/skos/core#definition> "A quoted Statement Map that is asserted in the RDF-star graph" .
+# 
+# https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap
+<https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Asserted Statement Map" .
+<https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap> <http://www.w3.org/2004/02/skos/core#definition> "A quoted Statement Map that is not asserted in the RDF-star graph" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

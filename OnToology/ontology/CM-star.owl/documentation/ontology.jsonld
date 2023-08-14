@@ -1,38 +1,106 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+    }, {
+      "@id" : "https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
+    "@id" : "_:genid12"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject"
+    "@id" : "https://w3id.org/conceptual-mapping/star#hasQuotedSubject"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+    }, {
+      "@id" : "https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+    }, {
+      "@id" : "https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
+    "@id" : "_:genid8"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject"
+    "@id" : "https://w3id.org/conceptual-mapping/star#hasQuotedObject"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap",
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+    }, {
+      "@id" : "https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/conceptual-mapping#StatementMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid7"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid11"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#",
+  "@id" : "https://w3id.org/conceptual-mapping/star#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -45,7 +113,7 @@
     "@value" : "2022-02-08T00:00:00"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Ana Iglesias Molina (Ontology ENgineering Group)"
+    "@value" : "Ana Iglesias Molina (Ontology Engineering Group)"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "This ontology extends the Conceptual Mapping to enable the generation of RDF-star graphs"
@@ -57,43 +125,70 @@
     "@value" : "cm-star"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star"
+    "@id" : "https://w3id.org/conceptual-mapping/star"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping"
+    "@id" : "https://w3id.org/conceptual-mapping"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star"
+    "@id" : "https://w3id.org/conceptual-mapping/star"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "v0.1.0"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap",
+  "@id" : "https://w3id.org/conceptual-mapping/star#AssertedStatementMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Asserted Statement Map"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/conceptual-mapping#StatementMap"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A quoted Statement Map that is asserted in the RDF-star graph"
+  } ]
+}, {
+  "@id" : "https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Non-Asserted Statement Map"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
+    "@id" : "https://w3id.org/conceptual-mapping#StatementMap"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A quoted Statement Map that is not asserted in the RDF-star graph"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject",
+  "@id" : "https://w3id.org/conceptual-mapping/star#hasQuotedObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/conceptual-mapping#StatementMap"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has quoted object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A relation between a Statement Map and the quoted Statement Map in the position of object"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject",
+  "@id" : "https://w3id.org/conceptual-mapping/star#hasQuotedSubject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/conceptual-mapping#StatementMap"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has quoted subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A relation between a Statement Map and the quoted Statement Map in the position of subject"

@@ -1,64 +1,172 @@
 <h2 id="crossreference" class="list">Cross-reference for Conceptual Mapping - RDF-star classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Conceptual Mapping - RDF-star.
-<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+<div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#NonAssertedStatementMap"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap">Non-Asserted Statement Map</a>
+         <a href="#https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+            title="https://w3id.org/conceptual-mapping/star#AssertedStatementMap">Asserted Statement Map</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+            title="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap">Non-Asserted Statement Map</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/conceptual-mapping#StatementMap" title="https://w3id.org/conceptual-mapping#StatementMap">
+            <span>statement map</span>
+         </a>
       </li>
    </ul>
-   <div class="entity" id="NonAssertedStatementMap">
+   <div class="entity" id="https://w3id.org/conceptual-mapping/star#AssertedStatementMap">
+      <h3>Asserted Statement Map<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/conceptual-mapping/star#AssertedStatementMap</p>
+      <div class="comment">
+         <span class="markdown">A quoted Statement Map that is asserted in the RDF-star graph</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/conceptual-mapping#StatementMap" title="https://w3id.org/conceptual-mapping#StatementMap">statement map</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+               title="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap">Non-Asserted Statement Map</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap">
       <h3>Non-Asserted Statement Map<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping-star#NonAssertedStatementMap</p>
+         <strong>IRI:</strong> https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap</p>
       <div class="comment">
          <span class="markdown">A quoted Statement Map that is not asserted in the RDF-star graph</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
-               target="_blank"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap">statement map</a>
+            <a href="#https://w3id.org/conceptual-mapping#StatementMap" title="https://w3id.org/conceptual-mapping#StatementMap">statement map</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+               title="https://w3id.org/conceptual-mapping/star#AssertedStatementMap">Asserted Statement Map</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <div class="entity" id="https://w3id.org/conceptual-mapping#StatementMap">
+      <h3>statement map<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/conceptual-mapping#StatementMap</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+               title="https://w3id.org/conceptual-mapping/star#AssertedStatementMap">Asserted Statement Map</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+               title="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap">Non-Asserted Statement Map</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/conceptual-mapping/star#hasQuotedObject"
+               title="https://w3id.org/conceptual-mapping/star#hasQuotedObject">has quoted object</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/conceptual-mapping/star#hasQuotedSubject"
+               title="https://w3id.org/conceptual-mapping/star#hasQuotedSubject">has quoted subject</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#hasQuotedObject"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject">has quoted object</a>
+         <a href="#https://w3id.org/conceptual-mapping/star#hasQuotedObject"
+            title="https://w3id.org/conceptual-mapping/star#hasQuotedObject">has quoted object</a>
       </li>
       <li>
-         <a href="#hasQuotedSubject"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject">has quoted subject</a>
+         <a href="#https://w3id.org/conceptual-mapping/star#hasQuotedSubject"
+            title="https://w3id.org/conceptual-mapping/star#hasQuotedSubject">has quoted subject</a>
       </li>
    </ul>
-   <div class="entity" id="hasQuotedObject">
+   <div class="entity" id="https://w3id.org/conceptual-mapping/star#hasQuotedObject">
       <h3>has quoted object<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedObject</p>
+         <strong>IRI:</strong> https://w3id.org/conceptual-mapping/star#hasQuotedObject</p>
       <div class="comment">
          <span class="markdown">A relation between a Statement Map and the quoted Statement Map in the position of object</span>
       </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/conceptual-mapping#StatementMap" title="https://w3id.org/conceptual-mapping#StatementMap">statement map</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+                  title="https://w3id.org/conceptual-mapping/star#AssertedStatementMap">Asserted Statement Map</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> 
+               <a href="#https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+                  title="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap">Non-Asserted Statement Map</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
-   <div class="entity" id="hasQuotedSubject">
+   <div class="entity" id="https://w3id.org/conceptual-mapping/star#hasQuotedSubject">
       <h3>has quoted subject<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping-star#hasQuotedSubject</p>
+         <strong>IRI:</strong> https://w3id.org/conceptual-mapping/star#hasQuotedSubject</p>
       <div class="comment">
          <span class="markdown">A relation between a Statement Map and the quoted Statement Map in the position of subject</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/conceptual-mapping#StatementMap" title="https://w3id.org/conceptual-mapping#StatementMap">statement map</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/conceptual-mapping/star#AssertedStatementMap"
+                  title="https://w3id.org/conceptual-mapping/star#AssertedStatementMap">Asserted Statement Map</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> 
+               <a href="#https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap"
+                  title="https://w3id.org/conceptual-mapping/star#NonAssertedStatementMap">Non-Asserted Statement Map</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
       </div>
    </div>
 </div><div id="legend">
